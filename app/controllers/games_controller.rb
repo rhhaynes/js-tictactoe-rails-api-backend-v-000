@@ -4,6 +4,8 @@ class GamesController < ApplicationController
   end
 
   def create
+    @game = Game.new(game_params)
+    render(:json => @game, :status => 201) if !!@game.save
   end
 
   def show
