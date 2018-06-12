@@ -8,7 +8,6 @@ class GamesController < ApplicationController
 
   def create
     @game = Game.create(:state => ["","","","","","","","",""])
-    binding.pry
     render :json => @game
   end
 
