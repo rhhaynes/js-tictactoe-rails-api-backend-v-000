@@ -9,6 +9,7 @@ class GamesController < ApplicationController
   end
 
   def show
+    render :json => @game
   end
 
   def update
