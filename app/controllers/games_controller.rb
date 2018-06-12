@@ -7,7 +7,7 @@ class GamesController < ApplicationController
   end
 
   def create
-    @game = Game.create(:state => ["","","","","","","","",""])
+    @game = Game.create(:state => ["X","","","","","","","",""])
     render :json => @game
   end
 
